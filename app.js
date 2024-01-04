@@ -155,7 +155,7 @@ app.all("*",(req,res,next)=>{
 app.use((err,req,res,next)=>{
     let{status=500,message="something went wrong"} = err;
     // console.log(err);
-  res.render("error.ejs",{message})
+  res.render("Error.ejs",{message})
     // res.status(status).send(message);
 })
 
